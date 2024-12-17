@@ -8,12 +8,12 @@ No*/
 
 #include <stdio.h>
 int main() {
-    int n,i,j,s,c,t;
+    int n,i,j,s,c,z;
      printf("Enter how many students: ");
   scanf("%d",&n);
   int x[n];
   printf("Enter total mark of exam: ");
-  scanf("%d",&t); 
+  scanf("%d",&z); 
 printf("Enter marks respectively:");
     
   for(i=0;i<n;i++){
@@ -21,13 +21,13 @@ printf("Enter marks respectively:");
 scanf("%d",&x[i]);}
 c=0;
 for(j=0;j<n;j++){
-    if(x[j]==t){
+    if(x[j]==z){
         c++;
-        printf("%d Students got full marks\n",c);
+       
     }
     else{printf("No students got full marks\n");
         break ;
     }
-}  
+}   printf("%d Students got full marks\n",c);
         return 0;
 }

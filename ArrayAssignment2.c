@@ -13,12 +13,14 @@ int main(){
   scanf("%d",&n);
   int x[n];
    printf("Enter %d persons age respectively: ",n);
+   c=0;s=0;
     for(i=0;i<n;i++){
         scanf ("%d",&x[i]);
         s=s+x[i];
         c++;
     }
     avg=s/n;
+    d=0;
     for(j=0;j<n;j++){
         if(x[j]>avg){
             d++;

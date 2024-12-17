@@ -7,17 +7,19 @@ Sample Output
 
 #include <stdio.h>
 int main(){
-    int i,c,avg,n,s;
+    int i,n,s;
+    float avg;
   printf("Enter how many days temp: ");
   scanf("%d",&n);
   int x[n];
    printf("Enter last %d days temperature respectively: ",n);
+   s=0;
     for(i=0;i<n;i++){
         scanf ("%d",&x[i]);
         s=s+x[i];
-        c++;
+       
     }
-    avg=s/n;
-printf("The average temperature is: %d\n",avg);    
+    avg=(float)s/n;
+printf("The average temperature is: %.2f\n",avg);    
     return 0;
 }

@@ -11,16 +11,16 @@ Sample Output
 
 #include <stdio.h>
 int main(){
-int i,a,b,j,max_even,max_odd;
+int i,a,b,n,j,max_even,max_odd;
 // int x[100]; //
 printf("How many numbers:") ;
 scanf("%d",&n);
 int x[n] ;
 
-printf("Enter 10 numbers respectively: ");
+printf("Enter %d numbers respectively: ",n);
    max_even=0;
    max_odd=0;
-for(i=0;i<10;i++){
+for(i=0;i<n;i++){
     scanf("%d",&x[i]);
     if(x[i]%2==0 ){
             if(x[i]>max_even){

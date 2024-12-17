@@ -1,4 +1,4 @@
-/* Write a C program which can input the last seven days temperature into an array and display
+/* 1. Write a C program which can input the last seven days temperature into an array and display
 the average temperature.
 Sample Input
 36 35 39 37 38 39 38
